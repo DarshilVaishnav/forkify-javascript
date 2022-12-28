@@ -35,7 +35,7 @@ class AddRecipeView extends View{
             e.preventDefault();
             const dataArr = [...new FormData(this)];
             const data = Object.fromEntries(dataArr);
-            console.log(data);
+            // console.log(data);
             handler(data);
         })
     }

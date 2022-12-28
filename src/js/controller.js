@@ -73,7 +73,7 @@ const controlPagination = function(goToPage){
 
 const controlServings = function(newServings){
   model.updateServings(newServings);
-  console.log(model.state.recipe);
+  // console.log(model.state.recipe);
 
   recipeView.update(model.state.recipe)
 };
@@ -84,7 +84,7 @@ const controlAddBookmark = function(){
   }else {
     model.deleteBookmark(model.state.recipe.id);
   }
-  console.log(model.state.recipe);
+  // console.log(model.state.recipe);
 
   recipeView.update(model.state.recipe);
 
